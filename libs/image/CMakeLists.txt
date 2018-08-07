@@ -14,6 +14,9 @@ set(PUBLIC_HDRS
 
 set(SRCS
         src/Image.cpp
+        src/LinearImage.cpp
+        src/ImageSampler.cpp
+        src/ImageOps.cpp
 )
 
 # ==================================================================================================
@@ -34,3 +37,11 @@ target_compile_options(${TARGET} PRIVATE
         -Wno-deprecated-register
         $<$<CONFIG:Release>:-ffast-math>
 )
+
+# ==================================================================================================
+# Tests
+# ==================================================================================================
+add_executable(test_${TARGET}
+        tests/test_sampler.cpp
+)
+target_link_libraries(test_${TARGET} PRIVATE image gtest)

@@ -111,6 +111,7 @@ Many other features have been either prototyped or planned:
     - `filamesh`:            Mesh converter
     - `matc`:                Material compiler
     - `matinfo`              Displays information about materials compiled with `matc`
+    - `mipgen`               Generates mipmaps, can also be used to resize or blur images.
     - `normal-blending`:     Tool to blend normal maps
     - `roughness-prefilter`: Pre-filters a roughness map from a normal map to reduce aliasing 
     - `skygen`:              Physically-based sky environment texture generator
